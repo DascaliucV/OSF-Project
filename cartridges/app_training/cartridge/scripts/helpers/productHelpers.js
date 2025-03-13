@@ -1,6 +1,6 @@
 'use strict';
 
-var base = module.superModule;
+var base = module.superModule || {};
 
 function calculatePercentageOff(standardPrice, salePrice) {
     var discountPercentage = 0; // Initialize with a default value

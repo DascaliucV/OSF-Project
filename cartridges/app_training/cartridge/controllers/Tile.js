@@ -9,7 +9,8 @@ var viewData = res.getViewData();
 var discountPercentage = null;
 
 //  Price information
-if (viewData.product && viewData.product.price) {
+//viewData.product for display discount
+if (product && viewData.product.price) {
 var product = viewData.product.price;
 var standardPrice = product.list.decimalPrice;
 var salePrice = product.sales.decimalPrice;
