@@ -177,7 +177,7 @@ declare global {
 
 				Signals if there are inventory lists for brick-and-mortar stores associated with this product.
 			* @group inStorePickup - In Store Pickup
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#2270) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3648)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#2270) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3672)
 			*/
 			availableForInStorePickup: boolean | null;
 
@@ -234,7 +234,7 @@ declare global {
 
 				Use this attribute to apply custom styles for this product.
 			* @group Presentation - Presentation Attributes
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#2420) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3616)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#2420) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3640)
 			*/
 			customCSSFile: MediaFile | null;
 
@@ -362,7 +362,7 @@ declare global {
 
 				This indiciates if the product is a new arrival.
 			* @group searchRefinements - Search Refinements
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#2886) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3659)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#2886) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3683)
 			*/
 			isNewtest: boolean | null;
 
@@ -371,7 +371,7 @@ declare global {
 
 				This is the help text. It is used for sorting rules.
 			* @group searchRefinements - Search Refinements
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#2897) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3661)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#2897) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3685)
 			*/
 			isSale: boolean | null;
 
@@ -465,7 +465,7 @@ declare global {
 			/**
 			* Refinement Color
 			* @group storefrontAttributes - Storefront Attributes
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3215) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3654)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3215) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3678)
 			*/
 			refinementColor: EnumValue<'black' | 'blue' | 'green' | 'red' | 'orange' | 'pink' | 'purple' | 'white' | 'yellow' | 'grey' | 'beige' | 'miscellaneous' | 'brown' | 'navy' | null> 
 
@@ -477,11 +477,18 @@ declare global {
 			resolution: string | null;
 
 			/**
+			* New Attribute SFRA Student Guide
+			* @group salesforceb2c_certification_questions_com_group - SFRA Student Guide Grouping
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3296) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3689)
+			*/
+			salesforceb2c_certification_questions_com: string | null;
+
+			/**
 			* Sandal Type
 
 				Type of Sandal for search refinement
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3296) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3308) 
 			*/
 			sandalType: EnumValue<'0010' | '0020' | '0030' | null> 
 
@@ -490,7 +497,7 @@ declare global {
 
 				test attribute
 			* @group searchRefinements - Search Refinements
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3322) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3660)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3334) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3684)
 			*/
 			sheets: ReadonlyArray<EnumValue<'value1' | 'value2' | 'value3'>> 
 
@@ -499,7 +506,7 @@ declare global {
 
 				Type of Shoe for search refinements
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3349) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3361) 
 			*/
 			shoeType: EnumValue<'0010' | '0020' | '0030' | '0040' | '0050' | '0060' | '0070' | '0080' | '0090' | '0100' | '0110' | null> 
 
@@ -508,35 +515,35 @@ declare global {
 
 				This attribute is used for all footwear, apparel and accessory sizing for men, women and kids products.
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3407) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3419) 
 			*/
 			size: string | null;
 
 			/**
 			* Skin Concern
 			* @group searchRefinements - Search Refinements
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3420) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3658)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3432) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3682)
 			*/
 			skinConcern: ReadonlyArray<EnumValue<'dryTight' | 'comprehensive' | 'liftingLossFirm'>> 
 
 			/**
 			* Style Number
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3446) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3458) 
 			*/
 			styleNumber: string | null;
 
 			/**
 			* Description
 			* @group storefrontAttributes - Storefront Attributes
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3459) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3652)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3471) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3676)
 			*/
 			tabDescription: MarkupText | null;
 
 			/**
 			* Details
 			* @group storefrontAttributes - Storefront Attributes
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3470) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3653)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3482) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3677)
 			*/
 			tabDetails: MarkupText | null;
 
@@ -545,42 +552,49 @@ declare global {
 
 				Type of tops in clothing
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3481) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3493) 
 			*/
 			topType: EnumValue<null> 
 
 			/**
+			* Training Battery Life
+			* 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3505) 
+			*/
+			trainingbatteryLife: string | null;
+
+			/**
 			* TV Signal Format
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3493) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3517) 
 			*/
 			tvSignalFormat: string | null;
 
 			/**
 			* Size
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3505) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3529) 
 			*/
 			tvSize: string | null;
 
 			/**
 			* TV Type
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3517) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3541) 
 			*/
 			tvType: EnumValue<'0010' | '0020' | '0030' | '0040' | null> 
 
 			/**
 			* Extended Warranty
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3546) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3570) 
 			*/
 			tvWarranty: string | null;
 
 			/**
 			* Video Storage
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3558) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3582) 
 			*/
 			videoStorage: string | null;
 
@@ -589,7 +603,7 @@ declare global {
 
 				Attribute used for apparel waist sizing.
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3570) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3594) 
 			*/
 			waist: string | null;
 
@@ -598,7 +612,7 @@ declare global {
 
 				This attribute is used for shoe widths for mens, womens and kids.
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3583) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3607) 
 			*/
 			width: string | null;
 
@@ -609,7 +623,7 @@ declare global {
 
 				This represents the UUID of the product line item that holds the qualifying product.
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3835) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3863) 
 			*/
 			bonusProductLineItemUUID: string | null;
 
@@ -618,7 +632,7 @@ declare global {
 
 				Links the store to the product line item for grouping shipments in the checkout process.
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3843) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3871) 
 			*/
 			fromStoreId: string | null;
 
@@ -627,7 +641,7 @@ declare global {
 
 				this custom attribute captures the original product line item uuid before it is part of an placed order
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3851) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#3879) 
 			*/
 			preOrderUUID: string | null;
 
@@ -636,7 +650,7 @@ declare global {
 			/**
 			* Family Status
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4050) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4078) 
 			*/
 			familyStatus: EnumValue<null> 
 
@@ -647,14 +661,14 @@ declare global {
 
 				Used to map the shipment to a  brick and mortar store.
 			* @group storepickup - Store Pickup Information
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4463) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4492)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4491) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4520)
 			*/
 			fromStoreId: string | null;
 
 			/**
 			* When this attribute equals 'instore', the checkout flow will assign the shipping method (005) which has a no shipping charge.
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4472) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4500) 
 			*/
 			shipmentType: string | null;
 
@@ -663,7 +677,7 @@ declare global {
 
 				This is text used by the end user when sending a message to the brick and mortar store about the shipment.  This is reflected in the order export.
 			* @group storepickup - Store Pickup Information
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4479) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4493)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4507) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4521)
 			*/
 			storePickupMessage: string | null;
 
@@ -674,14 +688,14 @@ declare global {
 
 				Estimated days until delivery
 			* @group shippingMethodAttr - Shipping Method Attributes
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4531) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4554)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4559) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4582)
 			*/
 			estimatedArrivalTime: string | null;
 
 			/**
 			* Store Pickup Enabled
 			* @group storePickUp - Store Pick Up
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4540) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4550)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4568) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4578)
 			*/
 			storePickupEnabled: boolean | null;
 
@@ -690,16 +704,23 @@ declare global {
 			/**
 			* GoogleVerificationTag - Content Attribute
 			* @group Storefront Configs - Storefront Configurations
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4640) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4884)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4668) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4919)
 			*/
 			GoogleVerificationTag: string | null;
+
+			/**
+			* Cart Total Threshold
+			* @group cartTotalThreshold - Cart Total Threshold
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4675) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4927)
+			*/
+			cartTotalThreshold: number | null;
 
 			/**
 			* Check TLS
 
 				When true, this causes a TLS check to take place based on whether or not a cookie ('dw_TLSWarning') has been set on the browser
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4647) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4682) 
 			*/
 			checkTLS: boolean | null;
 
@@ -708,14 +729,14 @@ declare global {
 
 				Default country code for store searches
 			* @group Storefront Configs - Storefront Configurations
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4655) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4885)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4690) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4920)
 			*/
 			countryCode: EnumValue<'US' | 'CA' | null> 
 
 			/**
 			* Customer Service Email
 			* @group Storefront Configs - Storefront Configurations
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4672) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4886)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4707) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4921)
 			*/
 			customerServiceEmail: string | null;
 
@@ -724,7 +745,7 @@ declare global {
 
 				Disable Responsive Design for Storefront
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4681) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4716) 
 			*/
 			disableResponsiveDesign: boolean | null;
 
@@ -733,7 +754,7 @@ declare global {
 
 				This Boolean toggles the option for infinite scrolling or pagination from within the search grid.
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4689) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4724) 
 			*/
 			enableInfiniteScroll: boolean | null;
 
@@ -742,21 +763,21 @@ declare global {
 
 				The attribute is used to enable/disable Multi-Shipment Checkout for each site via BM.
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4697) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4732) 
 			*/
 			enableMultiShipping: boolean | null;
 
 			/**
 			* Default List Price Book ID
 			* @group Storefront Configs - Storefront Configurations
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4705) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4883)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4740) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4918)
 			*/
 			listPriceDefault: string | null;
 
 			/**
 			* google map api key
 			* @group Storefront Configs - Storefront Configurations
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4713) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4887)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4748) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4922)
 			*/
 			mapAPI: string | null;
 
@@ -765,7 +786,7 @@ declare global {
 
 				This number indicates the number of times failures for Logins, GiftCert Balances, and Order Tracking requests will be allowed before displaying a CAPTCHA-style pop-up rate limiter
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4720) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4755) 
 			*/
 			rateLimiterThreshold: number | null;
 
@@ -774,7 +795,7 @@ declare global {
 
 				Please visit http://jquery.malsup.com/cycle/browser.html for complete visual effects
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4729) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4764) 
 			*/
 			slideshoweffect: EnumValue<'blindX' | 'blindY' | 'blindZ' | 'cover' | 'curtainX' | 'curtainY' | 'fade' | 'fadeZoom' | 'growX' | 'growY' | 'none' | 'scrollUp' | 'scrollDown' | 'scrollLeft' | 'scrollRight' | 'scrollHorz' | 'scrollVert' | 'shuffle' | 'slideX' | 'slideY' | 'toss' | 'turnUp' | 'turnDown' | 'turnLeft' | 'turnRight' | 'uncover' | 'wipe' | 'zoom' | null> 
 
@@ -783,7 +804,7 @@ declare global {
 
 				Store Lookup Max Distance
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4850) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4885) 
 			*/
 			storeLookupMaxDistance: EnumValue<50 | 75 | 100 | 150 | 200 | null> 
 
@@ -794,7 +815,7 @@ declare global {
 
 				Country Code Value - for the form values
 			* @group Address - Address
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#5030) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#5066)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#5070) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#5106)
 			*/
 			countryCodeValue: string | null;
 
@@ -803,7 +824,7 @@ declare global {
 
 				Store Inventory List ID
 			* @group Inventory - Inventory
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#5039) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#5084)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#5079) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#5124)
 			*/
 			inventoryListId: string | null;
 
@@ -816,16 +837,23 @@ declare global {
 					/**
 			* GoogleVerificationTag - Content Attribute
 			* @group Storefront Configs - Storefront Configurations
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4640) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4884)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4668) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4919)
 			*/
 			(name: 'GoogleVerificationTag'): string | null;
+			
+			/**
+			* Cart Total Threshold
+			* @group cartTotalThreshold - Cart Total Threshold
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4675) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4927)
+			*/
+			(name: 'cartTotalThreshold'): number | null;
 			
 			/**
 			* Check TLS
 
 				When true, this causes a TLS check to take place based on whether or not a cookie ('dw_TLSWarning') has been set on the browser
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4647) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4682) 
 			*/
 			(name: 'checkTLS'): boolean | null;
 			
@@ -834,14 +862,14 @@ declare global {
 
 				Default country code for store searches
 			* @group Storefront Configs - Storefront Configurations
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4655) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4885)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4690) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4920)
 			*/
 			(name: 'countryCode'): EnumValue<'US' | 'CA' | null> 
 			
 			/**
 			* Customer Service Email
 			* @group Storefront Configs - Storefront Configurations
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4672) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4886)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4707) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4921)
 			*/
 			(name: 'customerServiceEmail'): string | null;
 			
@@ -850,7 +878,7 @@ declare global {
 
 				Disable Responsive Design for Storefront
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4681) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4716) 
 			*/
 			(name: 'disableResponsiveDesign'): boolean | null;
 			
@@ -859,7 +887,7 @@ declare global {
 
 				This Boolean toggles the option for infinite scrolling or pagination from within the search grid.
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4689) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4724) 
 			*/
 			(name: 'enableInfiniteScroll'): boolean | null;
 			
@@ -868,21 +896,21 @@ declare global {
 
 				The attribute is used to enable/disable Multi-Shipment Checkout for each site via BM.
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4697) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4732) 
 			*/
 			(name: 'enableMultiShipping'): boolean | null;
 			
 			/**
 			* Default List Price Book ID
 			* @group Storefront Configs - Storefront Configurations
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4705) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4883)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4740) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4918)
 			*/
 			(name: 'listPriceDefault'): string | null;
 			
 			/**
 			* google map api key
 			* @group Storefront Configs - Storefront Configurations
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4713) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4887)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4748) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4922)
 			*/
 			(name: 'mapAPI'): string | null;
 			
@@ -891,7 +919,7 @@ declare global {
 
 				This number indicates the number of times failures for Logins, GiftCert Balances, and Order Tracking requests will be allowed before displaying a CAPTCHA-style pop-up rate limiter
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4720) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4755) 
 			*/
 			(name: 'rateLimiterThreshold'): number | null;
 			
@@ -900,7 +928,7 @@ declare global {
 
 				Please visit http://jquery.malsup.com/cycle/browser.html for complete visual effects
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4729) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4764) 
 			*/
 			(name: 'slideshoweffect'): EnumValue<'blindX' | 'blindY' | 'blindZ' | 'cover' | 'curtainX' | 'curtainY' | 'fade' | 'fadeZoom' | 'growX' | 'growY' | 'none' | 'scrollUp' | 'scrollDown' | 'scrollLeft' | 'scrollRight' | 'scrollHorz' | 'scrollVert' | 'shuffle' | 'slideX' | 'slideY' | 'toss' | 'turnUp' | 'turnDown' | 'turnLeft' | 'turnRight' | 'uncover' | 'wipe' | 'zoom' | null> 
 			
@@ -909,7 +937,7 @@ declare global {
 
 				Store Lookup Max Distance
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4850) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4885) 
 			*/
 			(name: 'storeLookupMaxDistance'): EnumValue<50 | 75 | 100 | 150 | 200 | null> 
 			

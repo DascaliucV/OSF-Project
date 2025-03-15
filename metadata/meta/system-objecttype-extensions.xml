@@ -3293,6 +3293,18 @@
                 <externally-defined-flag>false</externally-defined-flag>
                 <min-length>0</min-length>
             </attribute-definition>
+            <attribute-definition attribute-id="salesforceb2c_certification_questions_com">
+                <display-name xml:lang="x-default">New Attribute SFRA Student Guide</display-name>
+                <type>string</type>
+                <localizable-flag>false</localizable-flag>
+                <site-specific-flag>false</site-specific-flag>
+                <mandatory-flag>false</mandatory-flag>
+                <visible-flag>false</visible-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <order-required-flag>false</order-required-flag>
+                <externally-defined-flag>false</externally-defined-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
             <attribute-definition attribute-id="sandalType">
                 <display-name xml:lang="x-default">Sandal Type</display-name>
                 <description xml:lang="x-default">Type of Sandal for search refinement</description>
@@ -3490,6 +3502,18 @@
                 <order-required-flag>false</order-required-flag>
                 <externally-defined-flag>false</externally-defined-flag>
             </attribute-definition>
+            <attribute-definition attribute-id="trainingbatteryLife">
+                <display-name xml:lang="x-default">Training Battery Life</display-name>
+                <type>string</type>
+                <localizable-flag>false</localizable-flag>
+                <site-specific-flag>false</site-specific-flag>
+                <mandatory-flag>false</mandatory-flag>
+                <visible-flag>true</visible-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <order-required-flag>false</order-required-flag>
+                <externally-defined-flag>false</externally-defined-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
             <attribute-definition attribute-id="tvSignalFormat">
                 <display-name xml:lang="x-default">TV Signal Format</display-name>
                 <type>string</type>
@@ -3659,6 +3683,10 @@
                 <attribute attribute-id="isNewtest"/>
                 <attribute attribute-id="sheets"/>
                 <attribute attribute-id="isSale"/>
+            </attribute-group>
+            <attribute-group group-id="salesforceb2c_certification_questions_com_group">
+                <display-name xml:lang="x-default">SFRA Student Guide Grouping</display-name>
+                <attribute attribute-id="salesforceb2c_certification_questions_com"/>
             </attribute-group>
         </group-definitions>
     </type-extension>
@@ -4644,6 +4672,13 @@
                 <externally-managed-flag>false</externally-managed-flag>
                 <min-length>0</min-length>
             </attribute-definition>
+            <attribute-definition attribute-id="cartTotalThreshold">
+                <display-name xml:lang="x-default">Cart Total Threshold</display-name>
+                <type>double</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <default-value>200</default-value>
+            </attribute-definition>
             <attribute-definition attribute-id="checkTLS">
                 <display-name xml:lang="x-default">Check TLS</display-name>
                 <description xml:lang="x-default">When true, this causes a TLS check to take place based on whether or not a cookie ('dw_TLSWarning') has been set on the browser</description>
@@ -4885,6 +4920,11 @@
                 <attribute attribute-id="countryCode"/>
                 <attribute attribute-id="customerServiceEmail"/>
                 <attribute attribute-id="mapAPI"/>
+                <attribute attribute-id="cartTotalThreshold"/>
+            </attribute-group>
+            <attribute-group group-id="cartTotalThreshold">
+                <display-name xml:lang="x-default">Cart Total Threshold</display-name>
+                <attribute attribute-id="cartTotalThreshold"/>
             </attribute-group>
         </group-definitions>
     </type-extension>

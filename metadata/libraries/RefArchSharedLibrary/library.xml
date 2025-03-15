@@ -13181,3 +13181,18 @@ Burlington, MA 01803, USA&lt;br /&gt;&#13;
     </content>
 
 </library>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.demandware.com/xml/impex/library/2006-10-31" library-id="RefArchSharedLibrary">
+  <content content-id="cart-total-threshold">
+    <display-name xml:lang="x-default">Message Cart Exceeds</display-name>
+    <description xml:lang="x-default">Your cart total exceeds 200$!..</description>
+    <online-flag>true</online-flag>
+    <searchable-flag>false</searchable-flag>
+    <custom-attributes>
+      <custom-attribute attribute-id="body" xml:lang="x-default">Your cart total exceeds $200!</custom-attribute>
+    </custom-attributes>
+    <folder-links>
+    </folder-links>
+  </content>
+</library>
