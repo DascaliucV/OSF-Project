@@ -1,3 +1,7 @@
+<isinclude template="/components/modules" sf-toolkit="off" />
+
+
+
 <isdecorate template="common/layout/page">
     <isscript>
         var assets = require('*/cartridge/scripts/assets.js');
@@ -64,8 +68,21 @@
                             </isif>
                         </isif>
                     </isloop>
+
+
+                    <!--added color and display-->
+                        <isif condition="${pdict.cartMessage}">
+                             <div style="background-color: yellow; color: black; padding: 10px; border-radius: 5px; margin-top: 20px;">
+                                   <iscontentasset aid="cart-total-threshold"/>
+                             </div>
+                        </isif>
+                     
+
+
+
                     <isinclude template="cart/cartApproachingDiscount" />
                 </div>
+                
                 <!---totals, and checkout actions--->
                 <div class="col-sm-5 col-md-4 totals">
                     <isinclude template="cart/cartPromoCode" />
@@ -85,11 +102,13 @@
             </div>
             <isinclude template="cart/cartRemoveProductModal"/>
         </div>
+        
 
         <isinclude template="cart/cartRemoveCouponModal"/>
     </isif>
     <div class="container">
         <isslot id="cart-recommendations-m" description="Recommended products" context="global" />
     </div>
-    ${pdict.example}
+    <!--${pdict.example}-->
+    
 </isdecorate>
