@@ -1,3 +1,6 @@
+<isinclude template="/components/modules" sf-toolkit="off" />
+<link rel="stylesheet" type="text/css" href="${URLUtils.staticURL('/css/sizeGuideTable.css')}" />
+
 <isdecorate template="common/layout/page">
 
     <isscript>
@@ -138,6 +141,10 @@
 
             <isset name="loopState" value="${{count: 1}}" scope="page" />
             <isinclude template="product/components/descriptionAndDetails" />
+
+
+
+            <isinclude template="product/sizeGuideTable.isml"/>
 
 
 

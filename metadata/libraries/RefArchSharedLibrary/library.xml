@@ -13210,3 +13210,17 @@ Burlington, MA 01803, USA&lt;br /&gt;&#13;
     </folder-links>
   </content>
 </library>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.demandware.com/xml/impex/library/2006-10-31" library-id="RefArchSharedLibrary">
+  <content content-id="size_guide_table">
+    <display-name xml:lang="x-default">Size Guide Table</display-name>
+    <online-flag>true</online-flag>
+    <searchable-flag>false</searchable-flag>
+    <custom-attributes>
+      <custom-attribute attribute-id="body" xml:lang="x-default">&lt;table class=&quot;size-guide-table&quot;&gt;&#13;&lt;style type=&quot;text/css&quot;&gt;table {&#13;        width: 100%;&#13;        border-collapse: collapse;&#13;        font-family: Arial, sans-serif;&#13;    }&#13;    th, td {&#13;        border: 1px solid #ddd;&#13;        padding: 12px;&#13;        text-align: center;&#13;    }&#13;    th {&#13;        background-color: #f4f4f4;&#13;        font-weight: bold;&#13;    }&#13;&lt;/style&gt;&#13;&lt;/table&gt;&#13;&lt;table&gt;&#13;	&lt;thead&gt;&#13;		&lt;tr&gt;&#13;			&lt;th&gt;Tops (Chest)&lt;/th&gt;&#13;			&lt;th&gt;XS&lt;/th&gt;&#13;			&lt;th&gt;S&lt;/th&gt;&#13;			&lt;th&gt;M&lt;/th&gt;&#13;			&lt;th&gt;L&lt;/th&gt;&#13;			&lt;th&gt;XL&lt;/th&gt;&#13;			&lt;th&gt;XXL&lt;/th&gt;&#13;		&lt;/tr&gt;&#13;	&lt;/thead&gt;&#13;	&lt;tbody&gt;&#13;		&lt;tr&gt;&#13;			&lt;td&gt;Adidas&lt;/td&gt;&#13;			&lt;td&gt;31-33&amp;quot;&lt;/td&gt;&#13;			&lt;td&gt;34-37&amp;quot;&lt;/td&gt;&#13;			&lt;td&gt;37-40&amp;quot;&lt;/td&gt;&#13;			&lt;td&gt;40-44&amp;quot;&lt;/td&gt;&#13;			&lt;td&gt;44-48&amp;quot;&lt;/td&gt;&#13;			&lt;td&gt;48-52&amp;quot;&lt;/td&gt;&#13;		&lt;/tr&gt;&#13;		&lt;tr&gt;&#13;			&lt;td&gt;Canterbury&lt;/td&gt;&#13;			&lt;td&gt;-&lt;/td&gt;&#13;			&lt;td&gt;37-39&amp;quot;&lt;/td&gt;&#13;			&lt;td&gt;39-41&amp;quot;&lt;/td&gt;&#13;			&lt;td&gt;41-43&amp;quot;&lt;/td&gt;&#13;			&lt;td&gt;43-45&amp;quot;&lt;/td&gt;&#13;			&lt;td&gt;46-48&amp;quot;&lt;/td&gt;&#13;		&lt;/tr&gt;&#13;		&lt;tr&gt;&#13;			&lt;td&gt;New Balance&lt;/td&gt;&#13;			&lt;td&gt;-&lt;/td&gt;&#13;			&lt;td&gt;37-39&amp;quot;&lt;/td&gt;&#13;			&lt;td&gt;39-41&amp;quot;&lt;/td&gt;&#13;			&lt;td&gt;41-43&amp;quot;&lt;/td&gt;&#13;			&lt;td&gt;45-47&amp;quot;&lt;/td&gt;&#13;			&lt;td&gt;49-51&amp;quot;&lt;/td&gt;&#13;		&lt;/tr&gt;&#13;		&lt;tr&gt;&#13;			&lt;td&gt;Nike&lt;/td&gt;&#13;			&lt;td&gt;-&lt;/td&gt;&#13;			&lt;td&gt;35-38&amp;quot;&lt;/td&gt;&#13;			&lt;td&gt;38-41&amp;quot;&lt;/td&gt;&#13;			&lt;td&gt;41-44&amp;quot;&lt;/td&gt;&#13;			&lt;td&gt;44-49&amp;quot;&lt;/td&gt;&#13;			&lt;td&gt;49-54&amp;quot;&lt;/td&gt;&#13;		&lt;/tr&gt;&#13;	&lt;/tbody&gt;&#13;&lt;/table&gt;&#13;&lt;/table&gt;</custom-attribute>
+    </custom-attributes>
+    <folder-links>
+    </folder-links>
+  </content>
+</library>
