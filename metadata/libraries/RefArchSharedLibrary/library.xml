@@ -13196,3 +13196,17 @@ Burlington, MA 01803, USA&lt;br /&gt;&#13;
     </folder-links>
   </content>
 </library>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.demandware.com/xml/impex/library/2006-10-31" library-id="RefArchSharedLibrary">
+  <content content-id="home_page_banner">
+    <display-name xml:lang="x-default">Home Page Banner</display-name>
+    <online-flag>true</online-flag>
+    <searchable-flag>false</searchable-flag>
+    <custom-attributes>
+      <custom-attribute attribute-id="body" xml:lang="x-default">&lt;div class=&quot;homepage-banner&quot;&gt;&#13;&lt;h1 style=&quot;text-align: center;&quot;&gt;&amp;nbsp;&lt;/h1&gt;&#13;&lt;h1 style=&quot;text-align: center;&quot;&gt;&lt;em&gt;&lt;strong&gt;Picturesque View&lt;/strong&gt;&lt;/em&gt;&lt;/h1&gt;&#13;&lt;p style=&quot;text-align:center&quot;&gt;&lt;img alt=&quot;&quot; height=&quot;472&quot; src=&quot;homepagebanner.jpg?$staticlink$&quot; title=&quot;&quot; width=&quot;752&quot; /&gt;&lt;/p&gt;&#13;&lt;p style=&quot;text-align: center;&quot;&gt;&amp;nbsp;&lt;/p&gt;&#13;&lt;/div&gt;</custom-attribute>
+    </custom-attributes>
+    <folder-links>
+    </folder-links>
+  </content>
+</library>
