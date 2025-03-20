@@ -1,0 +1,50 @@
+<link rel="stylesheet" type="text/css" href="${URLUtils.staticURL('/css/carousel.css')}" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+<div class="product-list">
+    <isif condition="${slotcontent.content != null}">
+    <isloop items="${slotcontent.content}" var="product">
+        <div class="product-tile">
+            <h2><isprint value="${product.name}"/></h2>
+            <p>
+                <isif condition="${product.priceModel.price != null}">
+                    <isprint value="${product.priceModel.price.currency}"/> 
+                    <isprint value="${product.priceModel.price}"/>
+                    
+                </isif>
+            </p>
+                     <a href="${URLUtils.url('Product-Show', 'pid', product.ID)}">
+                 <img src="${product.getImages('small')[0].absURL}" alt="${product.name}"/>
+                    </a>
+                    
+        </div>
+    </isloop>
+    </isif>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+
+<script>
+    $(document).ready(function(){
+        $('.product-list').slick({
+            slidesToShow: 2, // Afișează 2 produse pe ecran mare
+            slidesToScroll: 1, // Schimbă câte un produs la fiecare apăsare pe săgeată
+            arrows: true, // Activează săgețile de navigare
+            dots: true, // Activează punctele de navigare sub carusel
+            responsive: [
+                {
+                    breakpoint: 768, // Pe ecrane mici (sub 768px)
+                    settings: {
+                        slidesToShow: 1, // Afișează câte un produs pe ecrane mici
+                        slidesToScroll: 1,
+                        arrows: true, // Săgețile sunt active și pe ecrane mici
+                        dots: true
+                    }
+                }
+            ]
+        });
+    });
+</script>

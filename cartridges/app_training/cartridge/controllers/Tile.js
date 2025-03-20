@@ -10,17 +10,17 @@ var discountPercentage = null;
 
 //  Price information
 //viewData.product for display discount
-if (product && viewData.product.price) {
-var product = viewData.product.price;
-var standardPrice = product.list.decimalPrice;
-var salePrice = product.sales.decimalPrice;
+if (viewData.product.price.list && viewData.product.price.sales) {
+var price = viewData.product.price;
+var standardPrice = price.list.decimalPrice;
+var salePrice = price.sales.decimalPrice;
 
 
 if (standardPrice > 0 && salePrice > 0) {
 // Calculate the discount percentage
 discountPercentage = productHelpers.calculatePercentageOff(
-standardPrice,
-salePrice
+parseFloat(standardPrice),
+parseFloat(salePrice)
 );
 }
 }
