@@ -1,0 +1,15 @@
+<isdecorate template="common/layout/page">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addJs('/js/productTile.js');
+        assets.addCss('/css/homePage.css');
+    </isscript>
+
+ <isslot id="product_carousel" description="Product Carousel" context="global">
+ 
+    
+    <iscomment> <div class="product-carousel">
+    <isinclude template="slots/carousel/productCarousel.isml" />
+    </div> </iscomment>
+    
+</isdecorate>
