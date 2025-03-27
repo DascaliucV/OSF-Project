@@ -1,2 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metadata xmlns="http://www.demandware.com/xml/impex/metadata/2006-10-31"/>
+<metadata xmlns="http://www.demandware.com/xml/impex/metadata/2006-10-31">
+    <custom-type type-id="AddressPaymentDetails">
+        <display-name xml:lang="x-default">Address &amp; Payment Details</display-name>
+        <staging-mode>source-to-target</staging-mode>
+        <storage-scope>organization</storage-scope>
+        <key-definition attribute-id="APD">
+            <type>string</type>
+            <min-length>0</min-length>
+        </key-definition>
+        <group-definitions>
+            <attribute-group group-id="address">
+                <display-name xml:lang="x-default">Address</display-name>
+                <attribute attribute-id="APD"/>
+                <attribute attribute-id="creationDate" system="true"/>
+                <attribute attribute-id="lastModified" system="true"/>
+            </attribute-group>
+            <attribute-group group-id="cardNumber">
+                <display-name xml:lang="x-default">Card Number</display-name>
+                <attribute attribute-id="APD"/>
+                <attribute attribute-id="creationDate" system="true"/>
+                <attribute attribute-id="lastModified" system="true"/>
+            </attribute-group>
+            <attribute-group group-id="city">
+                <display-name xml:lang="x-default">City</display-name>
+                <attribute attribute-id="APD"/>
+                <attribute attribute-id="creationDate" system="true"/>
+                <attribute attribute-id="lastModified" system="true"/>
+            </attribute-group>
+            <attribute-group group-id="comments">
+                <display-name xml:lang="x-default">Comments</display-name>
+                <attribute attribute-id="APD"/>
+                <attribute attribute-id="creationDate" system="true"/>
+                <attribute attribute-id="lastModified" system="true"/>
+            </attribute-group>
+            <attribute-group group-id="country">
+                <display-name xml:lang="x-default">Country</display-name>
+                <attribute attribute-id="APD"/>
+                <attribute attribute-id="creationDate" system="true"/>
+                <attribute attribute-id="lastModified" system="true"/>
+            </attribute-group>
+            <attribute-group group-id="email">
+                <display-name xml:lang="x-default">Email</display-name>
+                <attribute attribute-id="APD"/>
+                <attribute attribute-id="creationDate" system="true"/>
+                <attribute attribute-id="lastModified" system="true"/>
+            </attribute-group>
+            <attribute-group group-id="expirationMonth">
+                <display-name xml:lang="x-default">Expiration Month</display-name>
+                <attribute attribute-id="APD"/>
+                <attribute attribute-id="creationDate" system="true"/>
+                <attribute attribute-id="lastModified" system="true"/>
+            </attribute-group>
+            <attribute-group group-id="expirationYear">
+                <display-name xml:lang="x-default">Expiration Year</display-name>
+                <attribute attribute-id="APD"/>
+                <attribute attribute-id="creationDate" system="true"/>
+                <attribute attribute-id="lastModified" system="true"/>
+            </attribute-group>
+            <attribute-group group-id="firstName">
+                <display-name xml:lang="x-default">First Name</display-name>
+                <attribute attribute-id="APD"/>
+                <attribute attribute-id="creationDate" system="true"/>
+                <attribute attribute-id="lastModified" system="true"/>
+            </attribute-group>
+            <attribute-group group-id="lastName">
+                <display-name xml:lang="x-default">Last Name</display-name>
+                <attribute attribute-id="APD"/>
+                <attribute attribute-id="creationDate" system="true"/>
+                <attribute attribute-id="lastModified" system="true"/>
+            </attribute-group>
+            <attribute-group group-id="phoneNumber">
+                <display-name xml:lang="x-default">Phone Number</display-name>
+                <attribute attribute-id="APD"/>
+                <attribute attribute-id="creationDate" system="true"/>
+                <attribute attribute-id="lastModified" system="true"/>
+            </attribute-group>
+            <attribute-group group-id="securityCode">
+                <display-name xml:lang="x-default">Security Code</display-name>
+                <attribute attribute-id="APD"/>
+                <attribute attribute-id="creationDate" system="true"/>
+                <attribute attribute-id="lastModified" system="true"/>
+            </attribute-group>
+            <attribute-group group-id="state">
+                <display-name xml:lang="x-default">State</display-name>
+                <attribute attribute-id="APD"/>
+                <attribute attribute-id="creationDate" system="true"/>
+                <attribute attribute-id="lastModified" system="true"/>
+            </attribute-group>
+            <attribute-group group-id="zipCode">
+                <display-name xml:lang="x-default">ZIP Code</display-name>
+                <attribute attribute-id="APD"/>
+                <attribute attribute-id="creationDate" system="true"/>
+                <attribute attribute-id="lastModified" system="true"/>
+            </attribute-group>
+        </group-definitions>
+    </custom-type>
+
+    <custom-type type-id="Module">
+        <staging-mode>source-to-target</staging-mode>
+        <storage-scope>organization</storage-scope>
+        <key-definition attribute-id="m11">
+            <type>string</type>
+            <min-length>0</min-length>
+        </key-definition>
+        <group-definitions>
+            <attribute-group group-id="moduleid">
+                <display-name xml:lang="x-default">ModuleName</display-name>
+                <attribute attribute-id="m11"/>
+                <attribute attribute-id="creationDate" system="true"/>
+                <attribute attribute-id="lastModified" system="true"/>
+            </attribute-group>
+        </group-definitions>
+    </custom-type>
+
+</metadata>
