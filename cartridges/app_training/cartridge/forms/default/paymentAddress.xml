@@ -1,0 +1,16 @@
+<form xmlns="http://www.demandware.com/xml/form/2008-12-09">
+    <field formid="firstName" label="First Name" type="string" mandatory="true"/>
+    <field formid="lastName" label="Last Name" type="string" mandatory="true"/>
+    <field formid="address" label="Address" type="string" mandatory="true"/>
+    <field formid="city" label="City" type="string" mandatory="true"/>
+    <field formid="zipCode" label="ZIP Code" type="string" mandatory="true"/>
+    
+    <field formid="comments" label="Comments" type="string">
+        <constraint type="maxlength" value="150" errormsg="Maximum 150 characters allowed."/>
+    </field>
+    
+    <!-- Details payment -->
+    <field formid="cardNumber" label="Card Number" type="string" mandatory="true"/>
+    <field formid="expiryDate" label="Expiry Date" type="string" mandatory="true"/>
+    <field formid="cvv" label="CVV" type="string" mandatory="true"/>
+</form>
