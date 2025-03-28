@@ -414,6 +414,13 @@
                 <field-length>0</field-length>
                 <field-height>2</field-height>
             </attribute-definition>
+            <attribute-definition attribute-id="backgroundColor">
+                <display-name xml:lang="x-default">Background Color</display-name>
+                <type>text</type>
+                <localizable-flag>false</localizable-flag>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
             <attribute-definition attribute-id="catBannerID">
                 <display-name xml:lang="x-default">Category Banner ID</display-name>
                 <description xml:lang="x-default">Used to define the content asset used to populate a grid page banner for a category. This value is applied to all sub-category navigation (cascading) if no specific catBannerID has been defined for  a sub-category.</description>
@@ -494,6 +501,20 @@
                 <mandatory-flag>false</mandatory-flag>
                 <externally-managed-flag>false</externally-managed-flag>
             </attribute-definition>
+            <attribute-definition attribute-id="textAttribute">
+                <display-name xml:lang="x-default">Text Attribute</display-name>
+                <type>text</type>
+                <localizable-flag>false</localizable-flag>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+            <attribute-definition attribute-id="textColor">
+                <display-name xml:lang="x-default">Text Color</display-name>
+                <type>text</type>
+                <localizable-flag>false</localizable-flag>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
         </custom-attribute-definitions>
         <group-definitions>
             <attribute-group group-id="ExternalSearch">
@@ -535,6 +556,12 @@
                 <attribute attribute-id="headerMenuOrientation"/>
                 <attribute attribute-id="headerMenuBanner"/>
                 <attribute attribute-id="alternativeUrl"/>
+            </attribute-group>
+            <attribute-group group-id="visualStyle">
+                <display-name xml:lang="x-default">Visual Style</display-name>
+                <attribute attribute-id="textAttribute"/>
+                <attribute attribute-id="textColor"/>
+                <attribute attribute-id="backgroundColor"/>
             </attribute-group>
         </group-definitions>
     </type-extension>
