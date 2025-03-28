@@ -1,4 +1,36 @@
+<isscript>
+        var assets = require('*/cartridge/scripts/assets');
+        assets.addJs('/js/productTile.js');
+        assets.addCss('/css/categoryStyle.css');
+    </isscript>
 <div class="product-tile">
+
+    <isif condition="${pdict.category.custom.backgroundColor && pdict.category.custom.textAttribute}">
+        <div class="product-badge" style="background-color: ${pdict.category.custom.backgroundColor};
+                color: ${pdict.category.custom.textColor}">
+            ${pdict.category.custom.textAttribute}
+        </div>
+    </isif>
+    <div style="
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: #FF0000;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 100%; 
+        width: 60px;
+        height: 60px;   
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 100;
+        font-weight: bold;
+        font-size: 12px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    ">GAMING
+    </div>
+
     <!-- dwMarker="product" dwContentID="${product.uuid}" -->
     <isinclude template="product/components/productTileImage" />
     <div class="tile-body">
@@ -11,14 +43,21 @@
         <isset name="price" value="${product.price}" scope="page" />
         <isif condition="${product.productType === 'set'}">
             <isinclude template="product/components/pricing/setPrice" />
-        <iselse>
-            <isinclude template="product/components/pricing/main" />
+            <iselse>
+                <isinclude template="product/components/pricing/main" />
+        </isif>
+
+        <isif condition="${!empty(pdict.discountPercentage)}">
+            <div class="discount-percentage">
+
+                ${Resource.msgf('best.deal.label', 'productTile', null, pdict.discountPercentage)}
+            </div>
         </isif>
 
         <isif condition="${pdict.display.ratings !== false}">
             <isinclude template="product/productTileFooter" />
         </isif>
-        <div class="product-test-class">custom css class example</div>
+        <div class="product-test-class"></div>
     </div>
     <!-- END_dwmarker -->
 </div>
