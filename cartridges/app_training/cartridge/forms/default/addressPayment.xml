@@ -1,0 +1,30 @@
+<form id="address.payment" version="2.0">
+    <field formid="personal.info" label="Personal Information">
+        <field formid="firstName" label="First Name" type="string" mandatory="true" max-length="50"/>
+        <field formid="lastName" label="Last Name" type="string" mandatory="true" max-length="50"/>
+       
+
+    </field>
+    
+    <field formid="address.info" label="Address Information">
+        <field formid="city" label="City" type="string" mandatory="true" max-length="50"/>
+        <field formid="zipCode" label="ZIP Code" type="string" mandatory="true" max-length="6"/>
+        <field formid="state" label="State" type="string" mandatory="true"/>
+        <field formid="country" label="Country" type="string" mandatory="true"/>
+        <field formid="address" label="Address 1" type="string" mandatory="true"/>
+        <field formid="address" label="Address 2" type="string" mandatory="false"/>
+        <field formid="comments" label="Comments" type="textarea" mandatory="false" max-length="150"/>
+        <field formid="phoneNumber" label="Phone Number" type="string" mandatory="true" max-length="15"/>
+    </field>
+    
+    <field formid="payment.info" label="Payment Information">
+        
+        <field formid="cardNumber" label="Card Number" type="string" mandatory="true" max-length="16"/>
+        <field formid="expirationMonth" label="Expiration Month" type="string" mandatory="true" placeholder="MM/YY" max-length="5"/>
+        <field formid="expirationYear" label="Expiration Year" type="string" mandatory="true" placeholder="MM/YY" max-length="5"/>
+        <field formid="securityCode" label="Securiy Code" type="string" mandatory="true" max-length="4"/>
+        <field formid="email" label="Email" type="email" mandatory="true"/>
+
+    </field>
+    
+</form>

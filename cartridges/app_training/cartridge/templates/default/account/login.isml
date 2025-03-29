@@ -1,0 +1,107 @@
+<isinclude template="/components/modules" sf-toolkit="off" />
+<isdecorate template="common/layout/page">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addCss('/css/login.css');
+        assets.addJs('/js/login.js');
+    </isscript>
+
+    <div class="hero slant-down login-banner">
+        <h1 class="page-title">${Resource.msg('header.hero.image.login', 'login', null)}</h1>
+    </div>
+
+    <!-- Container pentru imagini clickable -->
+  <div class="image-selector-container" style="display: flex; justify-content: center; gap: 30px; margin: 20px 0;">
+    <!-- Asset Login -->
+    <div class="image-option login-option" style="cursor: pointer; position: relative;">
+        <iscontentasset aid="login-image1" style="display: block; max-width: 300px; height: auto;"/>
+        <div class="image-label" style="padding: 8px 16px; width: 100%; text-align: center;">
+        </div>
+    </div>
+
+    <!-- Asset Check Order -->
+    <div class="image-option order-option" style="cursor: pointer; position: relative;">
+        <iscontentasset aid="login-image2" style="display: block; max-width: 300px; height: auto;"/>
+        <div class="image-label" style="padding: 8px 16px; width: 100%; text-align: center;">
+        </div>
+    </div>
+</div>
+
+
+
+    <div class="container login-page">
+        <!---Breadcrumbs--->
+        <isinclude template="components/breadcrumbs/pageBreadcrumbs"/>
+        
+        <!-- Sectiunea Login (vizibila initial) -->
+        <div id="login-section">
+            <div class="row justify-content-center equal-height-container">
+    <div class="col-sm-8 col-md-6">
+        <div class="card equal-height-card">
+            <div class="card-body">
+                <div class="login-form-nav">
+                    <isinclude template="account/components/navTabs" />
+                    <div class="tab-content">
+                        <div class="tab-pane ${pdict.navTabValue === 'login' ? 'active' : ''}" id="login" role="tabpanel" aria-labelledby="login-tab">
+                            <isinclude template="account/components/loginForm" />
+                            <isinclude template="account/password/requestPasswordResetModal"/>
+                            <isinclude template="account/components/oauth" />
+                        </div>
+                        <div class="tab-pane ${pdict.navTabValue === 'register' ? 'active' : ''}" id="register" role="tabpanel" aria-labelledby="register-tab">
+                            <isinclude template="account/components/registerForm" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+
+        <!-- Sectiunea Check Order (ascunsa initial) -->
+        <div id="order-section" style="display: none;">
+            <div class="row justify-content-center equal-height">
+                <div class="col-sm-8 col-md-6">
+                    <div class="card">
+                        <isinclude template="account/components/trackOrderForm" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Selectează elementele
+        var loginOption = document.querySelector('.login-option');
+        var orderOption = document.querySelector('.order-option');
+        var loginSection = document.getElementById('login-section');
+        var orderSection = document.getElementById('order-section');
+        
+        // Gestionare click pe imaginea Login
+        loginOption.addEventListener('click', function() {
+            loginSection.style.display = 'block';
+            orderSection.style.display = 'none';
+            
+            // Adaugă clasă activă
+            this.classList.add('active-image');
+            orderOption.classList.remove('active-image');
+        });
+        
+        // Gestionare click pe imaginea Order
+        orderOption.addEventListener('click', function() {
+            loginSection.style.display = 'none';
+            orderSection.style.display = 'block';
+            
+            // Adaugă clasă activă
+            this.classList.add('active-image');
+            loginOption.classList.remove('active-image');
+        });
+        
+        // Activează prima imagine by default
+        loginOption.classList.add('active-image');
+    });
+    </script>
+
+</isdecorate>
