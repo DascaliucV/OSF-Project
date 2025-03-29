@@ -11,7 +11,7 @@
             ${pdict.category.custom.textAttribute}
         </div>
     </isif>
-    <div style="
+    <iscomment> <div style="
         position: absolute;
         top: 10px;
         left: 10px;
@@ -29,7 +29,7 @@
         font-size: 12px;
         box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     ">GAMING
-    </div>
+    </div> </iscomment>
 
     <!-- dwMarker="product" dwContentID="${product.uuid}" -->
     <isinclude template="product/components/productTileImage" />

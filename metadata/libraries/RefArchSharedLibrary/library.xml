@@ -13224,3 +13224,115 @@ Burlington, MA 01803, USA&lt;br /&gt;&#13;
     </folder-links>
   </content>
 </library>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.demandware.com/xml/impex/library/2006-10-31" library-id="RefArchSharedLibrary">
+  <content content-id="footer-title">
+    <display-name xml:lang="x-default">Footer Title</display-name>
+    <online-flag>true</online-flag>
+    <searchable-flag>false</searchable-flag>
+    <custom-attributes>
+      <custom-attribute attribute-id="body" xml:lang="x-default">&lt;h3 style=&quot;color: black; margin-top: 0;&quot;&gt;Footer Your Benefits Section&lt;/h3&gt;&#13;  &#13;&lt;h4 style=&quot;color: black;&quot;&gt;Where does it come from?&lt;/h4&gt;</custom-attribute>
+    </custom-attributes>
+    <folder-links>
+    </folder-links>
+  </content>
+</library>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.demandware.com/xml/impex/library/2006-10-31" library-id="RefArchSharedLibrary">
+  <content content-id="footer-hotline">
+    <display-name xml:lang="x-default">Hotline Footer</display-name>
+    <online-flag>true</online-flag>
+    <searchable-flag>false</searchable-flag>
+    <custom-attributes>
+      <custom-attribute attribute-id="body" xml:lang="x-default">&lt;h2&gt;Hotline&lt;/h2&gt;&#13;&lt;h2&gt;Monday to Friday: 8:00 AM to 5:00 PM&lt;/h2&gt;&#13;&lt;h2&gt;1-346-4845-52&lt;/h2&gt;</custom-attribute>
+    </custom-attributes>
+    <folder-links>
+    </folder-links>
+  </content>
+</library>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.demandware.com/xml/impex/library/2006-10-31" library-id="RefArchSharedLibrary">
+  <content content-id="footer_benefits">
+    <display-name xml:lang="x-default">Footer Benefits</display-name>
+    <online-flag>true</online-flag>
+    <searchable-flag>false</searchable-flag>
+    <custom-attributes>
+      <custom-attribute attribute-id="body" xml:lang="x-default">&lt;p&gt;&#13;&lt;h2 style=&quot;color: black; font-weight: bold;&quot;&gt;Where does it come from?&lt;/h2&gt;&#13;  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.&#13;  &lt;/p&gt;</custom-attribute>
+    </custom-attributes>
+    <folder-links>
+    </folder-links>
+  </content>
+</library>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.demandware.com/xml/impex/library/2006-10-31" library-id="RefArchSharedLibrary">
+  <content content-id="images1-footer">
+    <display-name xml:lang="x-default">Images1 Footer</display-name>
+    <online-flag>true</online-flag>
+    <searchable-flag>false</searchable-flag>
+    <custom-attributes>
+      <custom-attribute attribute-id="body" xml:lang="x-default">&lt;h1 style=&quot;text-align: center;margin: 20px 0;&quot;&gt;Trusted Shops&#13;&lt;/h1&gt;&#13;&lt;h1 style=&quot;text-align: center;margin: 20px 0;&quot;&#13;&lt;p&gt;&lt;img alt=&quot;&quot; height=&quot;142&quot; src=&quot;Trusted%20shops.png?$staticlink$&quot; title=&quot;&quot; width=&quot;142; margin: 0 10px; vertical-align: middle;&quot; /&gt;&lt;/p&gt;&#13;&lt;/h1&gt;</custom-attribute>
+    </custom-attributes>
+    <folder-links>
+    </folder-links>
+  </content>
+</library>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.demandware.com/xml/impex/library/2006-10-31" library-id="RefArchSharedLibrary">
+  <content content-id="images2-footer">
+    <display-name xml:lang="x-default">Payment Methods</display-name>
+    <online-flag>true</online-flag>
+    <searchable-flag>false</searchable-flag>
+    <custom-attributes>
+      <custom-attribute attribute-id="body" xml:lang="x-default">&lt;h1 style=&quot;text-align: center;&quot;&gt;Payment Methods&lt;/h1&gt;&#13;&lt;h1 style=&quot;text-align: center; margin: 20px 0;&quot;&gt;&#13;  &lt;img src=&quot;paypal.png?$staticlink$&quot; alt=&quot;PayPal&quot; style=&quot;height: 62px; width: 123px; margin: 0 10px; vertical-align: middle;&quot;&gt;&#13;  &lt;img src=&quot;MasterCard.jpg?$staticlink$&quot; alt=&quot;MasterCard&quot; style=&quot;height: 60px; width: 95px; margin: 0 10px; vertical-align: middle;&quot;&gt;&#13;  &lt;img src=&quot;Visa.jpg?$staticlink$&quot; alt=&quot;Visa&quot; style=&quot;height: 60px; width: 95px; margin: 0 10px; vertical-align: middle;&quot;&gt;&#13;&lt;/h1&gt;</custom-attribute>
+    </custom-attributes>
+    <folder-links>
+    </folder-links>
+  </content>
+</library>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.demandware.com/xml/impex/library/2006-10-31" library-id="RefArchSharedLibrary">
+  <content content-id="images3-footer">
+    <display-name xml:lang="x-default">Shipping Services</display-name>
+    <online-flag>true</online-flag>
+    <searchable-flag>false</searchable-flag>
+    <custom-attributes>
+      <custom-attribute attribute-id="body" xml:lang="x-default">&lt;h1 style=&quot;text-align: center;&quot;&gt;Shipping Services&lt;/h1&gt;&#13;&lt;h1 style=&quot;text-align: center;&quot;&gt;&#13;  &lt;img src=&quot;delivery-logo-design_1465-84.jpg?$staticlink$&quot; alt=&quot;Livrare&quot; height=&quot;105&quot; width=&quot;131&quot;&gt;&#13;  &lt;img src=&quot;201610872016-03-314963542BikeDelivery.jpg?$staticlink$&quot; alt=&quot;Curierat bicicletă&quot; height=&quot;103&quot; width=&quot;154&quot;&gt;&#13;&lt;/h1&gt;</custom-attribute>
+    </custom-attributes>
+    <folder-links>
+    </folder-links>
+  </content>
+</library>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.demandware.com/xml/impex/library/2006-10-31" library-id="RefArchSharedLibrary">
+  <content content-id="service-help-footer">
+    <display-name xml:lang="x-default">FAQ Servives and Footer</display-name>
+    <online-flag>true</online-flag>
+    <searchable-flag>false</searchable-flag>
+    <custom-attributes>
+      <custom-attribute attribute-id="body" xml:lang="x-default">&lt;h2&gt;Services &amp; Help&lt;/h2&gt;&#13;&lt;h2&gt;•FAQ&lt;/h2&gt;</custom-attribute>
+    </custom-attributes>
+    <folder-links>
+    </folder-links>
+  </content>
+</library>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.demandware.com/xml/impex/library/2006-10-31" library-id="RefArchSharedLibrary">
+  <content content-id="footer-text">
+    <display-name xml:lang="x-default">Text down footer</display-name>
+    <online-flag>true</online-flag>
+    <searchable-flag>false</searchable-flag>
+    <custom-attributes>
+      <custom-attribute attribute-id="body" xml:lang="x-default">&lt;h2&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique justo odio, eu lacinia quam rutrum elementum. Quisque venenatis sem et metus facilisis ultricies. Nulla elementum interdum lectus in placerat. Donec in augue ante. Nunc cursus tempor nisi ac volutpat. Nulla ligula dolor, aliquet eu accumsan quis, aliquet vitae felis. Praesent feugiat pretium varius. Etiam rhoncus semper vestibulum. Sed justo felis, maximus eu urna a, varius scelerisque dolor. Fusce dolor dui, dapibus sed pharetra eu, mattis id ante. Nulla elit metus, vehicula vitae dignissim at, ullamcorper non dui. Proin gravida vehicula mauris sed sagittis.&lt;/h2&gt;</custom-attribute>
+    </custom-attributes>
+    <folder-links>
+    </folder-links>
+  </content>
+</library>
