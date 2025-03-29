@@ -13336,3 +13336,31 @@ Burlington, MA 01803, USA&lt;br /&gt;&#13;
     </folder-links>
   </content>
 </library>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.demandware.com/xml/impex/library/2006-10-31" library-id="RefArchSharedLibrary">
+  <content content-id="login-image1">
+    <display-name xml:lang="x-default">Login image. Returning Customers</display-name>
+    <online-flag>true</online-flag>
+    <searchable-flag>false</searchable-flag>
+    <custom-attributes>
+      <custom-attribute attribute-id="body" xml:lang="x-default">&lt;div style=&quot;position: relative; display: inline-block; margin: 20px 0;&quot;&gt;&#13; &#13;  &lt;img src=&quot;imageslogin.jpg?$staticlink$&quot; &#13;       alt=&quot;Login&quot; &#13;       style=&quot;height:134px; width:233px; display: block;&quot;&gt;&#13;  &lt;div style=&quot;position: absolute; &#13;              left: 77px; &#13;              bottom: 0px;&#13;              color: white;&#13;              font-weight: bold;&#13;              font-size: 14px;&#13;              text-shadow: 1px 1px 2px rgba(0,0,0,0.8);&#13;              background: rgba(0,0,0,0.5);&#13;              padding: 3px 8px;&#13;              border-radius: 3px;&quot;&gt;&#13;    Returning Customers&#13;  &lt;/div&gt;&#13;&lt;/div&gt;</custom-attribute>
+    </custom-attributes>
+    <folder-links>
+    </folder-links>
+  </content>
+</library>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.demandware.com/xml/impex/library/2006-10-31" library-id="RefArchSharedLibrary">
+  <content content-id="login-image2">
+    <display-name xml:lang="x-default">Check your order image.</display-name>
+    <online-flag>true</online-flag>
+    <searchable-flag>false</searchable-flag>
+    <custom-attributes>
+      <custom-attribute attribute-id="body" xml:lang="x-default">&lt;div style=&quot;position: relative; display: inline-block; margin: 20px 0;&quot;&gt;&#13; &#13;  &lt;img src=&quot;imagescheck.jpg?$staticlink$&quot; &#13;       alt=&quot;Login&quot; &#13;       style=&quot;height:134px; width:233px; display: block;&quot;&gt;&#13;  &lt;div style=&quot;position: absolute; &#13;              left: 103px; &#13;              bottom: 0px;&#13;              color: white;&#13;              font-weight: bold;&#13;              font-size: 14px;&#13;              text-shadow: 1px 1px 2px rgba(0,0,0,0.8);&#13;              background: rgba(0,0,0,0.5);&#13;              padding: 3px 8px;&#13;              border-radius: 3px;&quot;&gt;&#13;    Check your order&#13;  &lt;/div&gt;&#13;&lt;/div&gt;</custom-attribute>
+    </custom-attributes>
+    <folder-links>
+    </folder-links>
+  </content>
+</library>
