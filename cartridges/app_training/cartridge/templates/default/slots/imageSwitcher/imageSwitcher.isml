@@ -1,0 +1,33 @@
+ <isinclude template="/components/modules" sf-toolkit="off" />
+
+<link rel="stylesheet" type="text/css" href="${URLUtils.staticURL('/css/login.css')}" />
+
+<iscontentasset aid="login-image1"/>
+<iscontentasset aid="login-image2"/>
+
+
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+ <div class="content-asset-list">
+    <isif condition="${slotcontent.content != null}">
+        <isloop items="${slotcontent.content}" var="contentAsset">
+            <div class="content-asset-tile">
+                <p>
+                    <isif condition="${contentAsset.text != null}">
+                        <isprint value="${contentAsset.text}"/>
+                    </isif>
+                    <isif condition="${contentAsset.html != null}">
+                        <isprint value="${contentAsset.html}" encoding="off"/>
+                    </isif>
+                </p>
+<h1 style="text-align: center; margin: 20px 0;">
+  <img src="${URLUtils.staticURL('/images/imagesclogin.jpg')}">
+  <img src="${URLUtils.staticURL('/images/imagescheck.jpg')}" >
+</h1>
+
+
+            </div>
+        </isloop>
+    </isif>
+</div> 
+
+

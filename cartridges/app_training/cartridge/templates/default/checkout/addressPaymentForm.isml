@@ -1,0 +1,430 @@
+<isscript>
+    var assets = require('*/cartridge/scripts/assets.js');
+    assets.addJs('/js/checkout.js');
+    assets.addCss('/css/checkout/checkout.css');
+</isscript>
+
+<iscontent type="text/html" charset="UTF-8" />
+<isdecorate template="common/layout/page">
+
+    <div class="shipping-form-container">
+
+        <div class="form-header">
+            <h1>Shipping</h1>
+        </div>
+
+        <form id="shippingForm" method="post" action="${URLUtils.url('YourController-Submit')}">
+            <!-- Row 1 - First Name & Last Name -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName" class="required">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName" class="required">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+            </div>
+
+            <!-- Row 2 - Address 1 -->
+            <div class="form-row">
+                <div class="form-group full-width">
+                    <label for="address1" class="required">Address 1</label>
+                    <input type="text" id="address1" name="address1" required>
+                </div>
+            </div>
+
+            <!-- Row 3 - Address 2 -->
+            <div class="form-row">
+                <div class="form-group full-width">
+                    <label for="address2">Address 2</label>
+                    <input type="text" id="address2" name="address2">
+                </div>
+            </div>
+
+            <!-- Row 4 - Country & State -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="country" class="required">Country</label>
+                    <select id="country" name="country" required>
+                        <option value="">Select Country</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <!-- etc -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="state" class="required">State</label>
+                    <input type="text" id="state" name="state" required>
+                </div>
+            </div>
+
+            <!-- Row 5 - City & ZIP Code -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="city" class="required">City</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="zipCode" class="required">ZIP Code</label>
+                    <input type="text" id="zipCode" name="zipCode" required>
+                    <span class="example-text">Example: 12345</span>
+                </div>
+            </div>
+
+            <!-- Row 6 - Phone Number -->
+            <div class="form-row">
+                <div class="form-group full-width">
+                    <label for="phone" class="required">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <span class="example-text">Example: 9234567890</span>
+                </div>
+
+                <div class="form-group">
+                    <!-- Empty for alignment -->
+                </div>
+            </div>
+
+            <!-- Row 7 - Comments max 150 characters-->
+            <div class="form-row">
+                <div class="form-group full-width">
+                    <label for="comments">Comments</label>
+                    <textarea id="comments" name="comments"
+                        style="width: 100%; box-sizing: border-box;    min-height: 100px;"></textarea>
+                    <small class="text-muted char-counter">
+                        You have <span class="remaining-chars">150</span> characters left out of 150
+                    </small>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="shipping-form-container">
+        <form id="paymentMethod" method="post" action="${URLUtils.url('YourController-Submit')}">
+            <div class="form-header">
+                <h1>Payment</h1>
+            </div>
+
+            <div class="payment-divider"></div>
+
+            <div class="form-row">
+                <div class="form-group full-width">
+                    <label for="cardNumber" class="required">Card Number</label>
+                    <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" required>
+                </div>
+            </div>
+
+            <!-- Expiration Date  -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="expirationMonth" class="required">Expiration Month</label>
+                    <select id="expirationMonth" name="expirationMonth" required>
+                        <option value="">Month</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="expirationYear" class="required">Expiration Year</label>
+                    <select id="expirationYear" name="expirationYear" required>
+                        <option value="">Year</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                        <option value="2031">2031</option>
+                        <option value="2032">2032</option>
+                        <option value="2033">2033</option>
+                        <option value="2034">2034</option>
+                        <option value="2035">2035</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <!-- CVV and email with info icon -->
+                <div class="form-group" style="flex: 1; margin-right: 15px;">
+
+                    <label class="form-control-label required-field">
+                        ${Resource.msg('field.credit.card.security.code', 'creditCard', 'Security Code')}
+                        <span class="info-icon-tooltip">
+                            <span class="info-icon">i</span>
+                            <span class="tooltip-text">Please enter the security(CVV) code on the back of your
+                                card.</span>
+                        </span>
+                    </label>
+                    <input type="text" id="securityCode" name="securityCode" placeholder="CVV" required>
+                </div>
+
+                <div class="form-group" style="flex: 1;">
+                    <label class="form-control-label required-field">
+                        ${Resource.msg('field.email', 'checkout', 'Email')}
+                        <span class="info-icon-tooltip">
+                            <span class="info-icon">i</span>
+                            <span class="tooltip-text">Please enter your e-mail address</span>
+                        </span>
+                    </label>
+                    <input type="email" class="form-control" id="paymentEmail" placeholder="email@example.com" required>
+                </div>
+            </div>
+            </form>
+    </div>
+
+
+
+
+    <!-- Submit Button and top arrow button -->
+
+    <div class="form-row"
+        style="display: flex; align-items: center; gap: 15px; justify-content: flex-start; margin-top:20px;">
+        <button type="submit" class="submit-btn"
+            style="flex-grow: 1; max-width: calc(100% - 155px); margin-left: 50px;">Save</button>
+        <button class="scroll-top-btn" type="button"
+            onclick="event.stopPropagation(); event.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'}); return false;"
+            style="width: 40px; height: 40px; border: 1px solid #0176D3; border-radius: 4px; display: flex; align-items: center; justify-content: center; gap:5px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0176D3" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+            </svg>
+        </button>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const commentsTextarea = document.getElementById('comments');
+        const counter = document.querySelector('.remaining-chars');
+        const MAX_CHARS = 150;
+        
+        // Initialize counter for limit character in section Comments
+        updateCounter();
+        
+        // Block any input that would exceed limit
+        commentsTextarea.addEventListener('input', function(e) {
+            if (this.value.length > MAX_CHARS) {
+                this.value = this.value.substring(0, MAX_CHARS);
+            }
+            updateCounter();
+        });
+        
+        // Prevent paste of long text
+        commentsTextarea.addEventListener('paste', function(e) {
+            const pasteData = e.clipboardData.getData('text/plain');
+            if (this.value.length + pasteData.length > MAX_CHARS) {
+                e.preventDefault();
+                const allowedLength = MAX_CHARS - this.value.length;
+                if (allowedLength > 0) {
+                    document.execCommand('insertText', false, pasteData.substring(0, allowedLength));
+                }
+                updateCounter();
+            }
+        });
+        
+        // Prevent drag and drop of long text
+        commentsTextarea.addEventListener('drop', function(e) {
+            const dropData = e.dataTransfer.getData('text/plain');
+            if (this.value.length + dropData.length > MAX_CHARS) {
+                e.preventDefault();
+                const allowedLength = MAX_CHARS - this.value.length;
+                if (allowedLength > 0) {
+                    document.execCommand('insertText', false, dropData.substring(0, allowedLength));
+                }
+                updateCounter();
+            }
+        });
+        
+        function updateCounter() {
+            const remaining = MAX_CHARS - commentsTextarea.value.length;
+            counter.textContent = remaining;
+            
+            if (remaining <= 0) {
+                counter.textContent = 0;
+                counter.style.color = 'red';
+            } else if (remaining < 20) {
+                counter.style.color = 'orange';
+            } else {
+                counter.style.color = '';
+            }
+        }
+    });
+</script>
+
+    <style>
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .shipping-form-container {
+            max-width: 1200px;
+            margin: 15px auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .form-header {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .form-header h1 {
+            font-size: 1.5rem;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Form Styles */
+        form {
+            margin-top: 20px;
+        }
+
+
+        .form-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .form-group {
+            flex: 1 1 calc(50% - 15px);
+            min-width: 200px;
+        }
+
+        .form-group.full-width {
+            flex: 1 1 100%;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: normal;
+            color: #555;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .required::after {
+            content: " *";
+            color: red;
+        }
+
+        .example-text {
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 4px;
+        }
+    </style>
+
+    <style>
+        /* Style for info icon */
+        .info-icon {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: #007bff;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 16px;
+            font-size: 11px;
+            font-style: normal;
+            cursor: help;
+            margin-left: 5px;
+        }
+
+        /* Style for tooltip */
+        .info-icon-tooltip {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip-text {
+            visibility: hidden;
+            width: 200px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 4px;
+            padding: 8px;
+            position: absolute;
+            z-index: 1000;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 12px;
+            font-weight: normal;
+        }
+
+        .scroll-top-btn {
+            width: 40px;
+            height: 40px;
+            background: white;
+            border: 1px solid #0176D3;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+
+        .info-icon-tooltip:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+    
+</isdecorate>
