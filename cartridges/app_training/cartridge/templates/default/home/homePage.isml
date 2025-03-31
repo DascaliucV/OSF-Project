@@ -1,0 +1,70 @@
+<isdecorate template="common/layout/page">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addJs('/js/productTile.js');
+        assets.addCss('/css/homePage.css');
+    </isscript>
+
+ <isslot id="product_carousel" description="Product Carousel" context="global">
+
+ <div class="center-content">
+        <isinclude template="ajax/inputAjax.isml"/>
+        <isinclude template="ajax/modalAjax.isml"/>
+    </div>
+
+    <div class="home-main homepage">
+        <isslot id="home-main-m" description="Main home page slot." context="global" />
+    </div>
+
+    <div class="container home-categories homepage">
+        <div class="row home-main-categories no-gutters">
+            <isslot id="home-categories-m" description="Categories slots on the home page." context="global" />
+        </div>
+    </div>
+
+    <div class="container home-product-tiles homepage">
+        <div class="hp-product-grid" itemtype="http://schema.org/SomeProducts" itemid="#product">
+            <isslot id="home-products-m" description="Product tiles on the home page." context="global" />
+        </div>
+    </div>
+
+    <div class="homepage shop-the-style">
+        <isslot id="home-product-set-m" description="Link to a Product Set." context="global" />
+    </div>
+    
+
+    
+</isdecorate>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#submitButton').on('click', function() {
+            var text = $('#textInput').val();
+            if (text) {
+                $('#modalText').text('You searched for: ' + text);
+                $('#textModal').modal('show');
+            } else {
+                alert('Please enter a search term.');
+            }
+        });
+
+        $('#textModal').on('shown.bs.modal', function() {
+            console.log('Modal is fully shown');
+        });
+    });
+</script>
+<style>
+    .center-content {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <iscomment> <div class="product-carousel">
+    <isinclude template="slots/carousel/productCarousel.isml" />
+    </div> </iscomment>
+    
