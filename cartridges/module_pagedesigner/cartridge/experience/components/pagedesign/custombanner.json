@@ -1,0 +1,35 @@
+
+{
+  "name": "Custom Banner",
+  "description": "An image banner that links to a category.",
+  "group": "pagedesign",
+  "attribute_definition_groups": [
+    {
+      "id": "background",
+      "name": "Banner Image",
+      "description": "The visual display of the banner image.",
+      "attribute_definitions": [
+        {
+          "id": "image",
+          "name": "Image",
+          "type": "image",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "link",
+      "name": "Shop Now Link",
+      "description": "The category link for the banner.",
+      "attribute_definitions": [
+        {
+          "id": "category",
+          "name": "Category Link",
+          "type": "category",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "region_definitions": []
+}
