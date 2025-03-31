@@ -732,14 +732,14 @@ declare global {
 			/**
 			* GoogleVerificationTag - Content Attribute
 			* @group Storefront Configs - Storefront Configurations
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4707) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4958)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4707) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4965)
 			*/
 			GoogleVerificationTag: string | null;
 
 			/**
 			* Cart Total Threshold
 			* @group cartTotalThreshold - Cart Total Threshold
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4714) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4966)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4714) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4973)
 			*/
 			cartTotalThreshold: number | null;
 
@@ -757,14 +757,14 @@ declare global {
 
 				Default country code for store searches
 			* @group Storefront Configs - Storefront Configurations
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4729) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4959)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4729) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4966)
 			*/
 			countryCode: EnumValue<'US' | 'CA' | null> 
 
 			/**
 			* Customer Service Email
 			* @group Storefront Configs - Storefront Configurations
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4746) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4960)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4746) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4967)
 			*/
 			customerServiceEmail: string | null;
 
@@ -798,23 +798,30 @@ declare global {
 			/**
 			* Default List Price Book ID
 			* @group Storefront Configs - Storefront Configurations
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4779) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4957)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4779) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4964)
 			*/
 			listPriceDefault: string | null;
 
 			/**
 			* google map api key
 			* @group Storefront Configs - Storefront Configurations
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4787) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4961)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4787) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4968)
 			*/
 			mapAPI: string | null;
+
+			/**
+			* Page Designer Page ID
+			* @group pageDesignerPageID - Page Designer Page ID
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4794) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4977)
+			*/
+			pageDesignerPageID: string | null;
 
 			/**
 			* Rate Limiter Threshold
 
 				This number indicates the number of times failures for Logins, GiftCert Balances, and Order Tracking requests will be allowed before displaying a CAPTCHA-style pop-up rate limiter
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4794) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4801) 
 			*/
 			rateLimiterThreshold: number | null;
 
@@ -823,7 +830,7 @@ declare global {
 
 				Please visit http://jquery.malsup.com/cycle/browser.html for complete visual effects
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4803) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4810) 
 			*/
 			slideshoweffect: EnumValue<'blindX' | 'blindY' | 'blindZ' | 'cover' | 'curtainX' | 'curtainY' | 'fade' | 'fadeZoom' | 'growX' | 'growY' | 'none' | 'scrollUp' | 'scrollDown' | 'scrollLeft' | 'scrollRight' | 'scrollHorz' | 'scrollVert' | 'shuffle' | 'slideX' | 'slideY' | 'toss' | 'turnUp' | 'turnDown' | 'turnLeft' | 'turnRight' | 'uncover' | 'wipe' | 'zoom' | null> 
 
@@ -832,7 +839,7 @@ declare global {
 
 				Store Lookup Max Distance
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4924) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4931) 
 			*/
 			storeLookupMaxDistance: EnumValue<50 | 75 | 100 | 150 | 200 | null> 
 
@@ -843,7 +850,7 @@ declare global {
 
 				Country Code Value - for the form values
 			* @group Address - Address
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#5109) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#5145)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#5120) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#5156)
 			*/
 			countryCodeValue: string | null;
 
@@ -852,7 +859,7 @@ declare global {
 
 				Store Inventory List ID
 			* @group Inventory - Inventory
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#5118) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#5163)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#5129) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#5174)
 			*/
 			inventoryListId: string | null;
 
@@ -865,14 +872,14 @@ declare global {
 					/**
 			* GoogleVerificationTag - Content Attribute
 			* @group Storefront Configs - Storefront Configurations
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4707) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4958)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4707) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4965)
 			*/
 			(name: 'GoogleVerificationTag'): string | null;
 			
 			/**
 			* Cart Total Threshold
 			* @group cartTotalThreshold - Cart Total Threshold
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4714) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4966)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4714) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4973)
 			*/
 			(name: 'cartTotalThreshold'): number | null;
 			
@@ -890,14 +897,14 @@ declare global {
 
 				Default country code for store searches
 			* @group Storefront Configs - Storefront Configurations
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4729) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4959)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4729) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4966)
 			*/
 			(name: 'countryCode'): EnumValue<'US' | 'CA' | null> 
 			
 			/**
 			* Customer Service Email
 			* @group Storefront Configs - Storefront Configurations
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4746) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4960)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4746) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4967)
 			*/
 			(name: 'customerServiceEmail'): string | null;
 			
@@ -931,23 +938,30 @@ declare global {
 			/**
 			* Default List Price Book ID
 			* @group Storefront Configs - Storefront Configurations
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4779) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4957)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4779) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4964)
 			*/
 			(name: 'listPriceDefault'): string | null;
 			
 			/**
 			* google map api key
 			* @group Storefront Configs - Storefront Configurations
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4787) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4961)
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4787) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4968)
 			*/
 			(name: 'mapAPI'): string | null;
+			
+			/**
+			* Page Designer Page ID
+			* @group pageDesignerPageID - Page Designer Page ID
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4794) | [group](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4977)
+			*/
+			(name: 'pageDesignerPageID'): string | null;
 			
 			/**
 			* Rate Limiter Threshold
 
 				This number indicates the number of times failures for Logins, GiftCert Balances, and Order Tracking requests will be allowed before displaying a CAPTCHA-style pop-up rate limiter
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4794) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4801) 
 			*/
 			(name: 'rateLimiterThreshold'): number | null;
 			
@@ -956,7 +970,7 @@ declare global {
 
 				Please visit http://jquery.malsup.com/cycle/browser.html for complete visual effects
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4803) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4810) 
 			*/
 			(name: 'slideshoweffect'): EnumValue<'blindX' | 'blindY' | 'blindZ' | 'cover' | 'curtainX' | 'curtainY' | 'fade' | 'fadeZoom' | 'growX' | 'growY' | 'none' | 'scrollUp' | 'scrollDown' | 'scrollLeft' | 'scrollRight' | 'scrollHorz' | 'scrollVert' | 'shuffle' | 'slideX' | 'slideY' | 'toss' | 'turnUp' | 'turnDown' | 'turnLeft' | 'turnRight' | 'uncover' | 'wipe' | 'zoom' | null> 
 			
@@ -965,7 +979,7 @@ declare global {
 
 				Store Lookup Max Distance
 			* 
-			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4924) 
+			* @source [attribute](file:c:\Users\Valentin Baros\Desktop\OSF Project\metadata\meta\system-objecttype-extensions.xml#4931) 
 			*/
 			(name: 'storeLookupMaxDistance'): EnumValue<50 | 75 | 100 | 150 | 200 | null> 
 			

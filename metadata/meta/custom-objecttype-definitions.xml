@@ -113,4 +113,22 @@
         </group-definitions>
     </custom-type>
 
+    <custom-type type-id="pageDesignerPageID">
+        <display-name xml:lang="x-default">Page Designer Page ID</display-name>
+        <staging-mode>no-staging</staging-mode>
+        <storage-scope>organization</storage-scope>
+        <key-definition attribute-id="pageDesignerPageID">
+            <type>string</type>
+            <min-length>0</min-length>
+        </key-definition>
+        <group-definitions>
+            <attribute-group group-id="pageDesignerPageID">
+                <display-name xml:lang="x-default">Page Designer Page ID</display-name>
+                <attribute attribute-id="pageDesignerPageID"/>
+                <attribute attribute-id="creationDate" system="true"/>
+                <attribute attribute-id="lastModified" system="true"/>
+            </attribute-group>
+        </group-definitions>
+    </custom-type>
+
 </metadata>

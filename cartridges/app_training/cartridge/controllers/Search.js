@@ -146,7 +146,8 @@ server.get('ShowAjax', cache.applyShortPromotionSensitiveCache, consentTracking.
 server.get('Show', cache.applyShortPromotionSensitiveCache, consentTracking.consent, function (req, res, next) {
     var PageMgr = require('dw/experience/PageMgr');
 
-    var pageDesignerID = 'my-page-designer-page';
+     var pageDesignerID = 'my-page-designer-page';
+     var pageDesignerID = 'wayfinder-page';
     var pageDesigner = PageMgr.getPage(pageDesignerID);
     if (pageDesigner && pageDesigner.isVisible()) {
         res.print(PageMgr.renderPage(pageDesigner.ID, ''));

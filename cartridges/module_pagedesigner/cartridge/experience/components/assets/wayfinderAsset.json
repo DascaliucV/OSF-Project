@@ -1,0 +1,23 @@
+{
+  "name": "Wayfinder Asset",
+  "type": "component",
+  "group": "Wayfinder",
+  "description": "A clickable image with a title and category link.",
+  "attributes": {
+    "image": {
+      "type": "image",
+      "label": "Image",
+      "description": "The image to display for the Wayfinder."
+    },
+    "category": {
+      "type": "string",
+      "label": "Category URL",
+      "description": "The URL where the image should link."
+    },
+    "title": {
+      "type": "string",
+      "label": "Title",
+      "description": "The title displayed under the image."
+    }
+  }
+}

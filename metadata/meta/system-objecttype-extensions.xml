@@ -4791,6 +4791,13 @@
                 <externally-managed-flag>false</externally-managed-flag>
                 <min-length>0</min-length>
             </attribute-definition>
+            <attribute-definition attribute-id="pageDesignerPageID">
+                <display-name xml:lang="x-default">Page Designer Page ID</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
             <attribute-definition attribute-id="rateLimiterThreshold">
                 <display-name xml:lang="x-default">Rate Limiter Threshold</display-name>
                 <description xml:lang="x-default">This number indicates the number of times failures for Logins, GiftCert Balances, and Order Tracking requests will be allowed before displaying a CAPTCHA-style pop-up rate limiter</description>
@@ -4964,6 +4971,10 @@
             <attribute-group group-id="cartTotalThreshold">
                 <display-name xml:lang="x-default">Cart Total Threshold</display-name>
                 <attribute attribute-id="cartTotalThreshold"/>
+            </attribute-group>
+            <attribute-group group-id="pageDesignerPageID">
+                <display-name xml:lang="x-default">Page Designer Page ID</display-name>
+                <attribute attribute-id="pageDesignerPageID"/>
             </attribute-group>
         </group-definitions>
     </type-extension>
