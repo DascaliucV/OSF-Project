@@ -470,6 +470,14 @@
                     </value-definition>
                 </value-definitions>
             </attribute-definition>
+            <attribute-definition attribute-id="pageDesignerPageID">
+                <display-name xml:lang="x-default">Page Designer Page ID</display-name>
+                <type>string</type>
+                <localizable-flag>false</localizable-flag>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
             <attribute-definition attribute-id="showInMenu">
                 <display-name xml:lang="x-default">Show in Menu Navigation</display-name>
                 <description xml:lang="x-default">Used to indicate that a category (such as Mens -&gt; Footwear -&gt; Boots) will display in the roll-over navigation. A sub-category only shows if also the parent category is marked as showInMenu. Up to three category levels are shown in roll-over navigation.</description>
@@ -556,6 +564,10 @@
                 <attribute attribute-id="headerMenuOrientation"/>
                 <attribute attribute-id="headerMenuBanner"/>
                 <attribute attribute-id="alternativeUrl"/>
+            </attribute-group>
+            <attribute-group group-id="pageDesigner">
+                <display-name xml:lang="x-default">Page Designer</display-name>
+                <attribute attribute-id="pageDesignerPageID"/>
             </attribute-group>
             <attribute-group group-id="visualStyle">
                 <display-name xml:lang="x-default">Visual Style</display-name>
