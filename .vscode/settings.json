@@ -1,0 +1,14 @@
+{
+    "osfdigital.wingman.knowledgeBaseSettings": {
+        "salesforceDevEnabled": true,
+        "salesforceHelpEnabled": true,
+        "indexedWorkspaceEnabled": false,
+        "omsSearchEnabled": true,
+        "composableEnabled": true,
+        "sfccEnabled": true
+    },
+    "osfdigital.wingman.workspaceIndexingSettings": {
+        "uploadedFiles": 0,
+        "indexingState": 3
+    }
+}
