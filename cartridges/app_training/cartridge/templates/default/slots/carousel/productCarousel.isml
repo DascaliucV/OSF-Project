@@ -1,0 +1,51 @@
+<link rel="stylesheet" type="text/css" href="${URLUtils.staticURL('/css/carousel.css')}" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+<div class="product-list">
+    <isif condition="${slotcontent.content != null}">
+    <isloop items="${slotcontent.content}" var="product">
+        <div class="product-tile">
+            <h2><isprint value="${product.name}"/></h2>
+            <p>
+                <isif condition="${product.priceModel.price != null}">
+                    <isprint value="${product.priceModel.price.currency}"/> 
+                    <isprint value="${product.priceModel.price}"/>
+                    
+                </isif>
+            </p>
+                     <a href="${URLUtils.url('Product-Show', 'pid', product.ID)}">
+                 <img src="${product.getImages('small')[0].absURL}" alt="${product.name}"/>
+                    </a>
+                    
+        </div>
+    </isloop>
+    </isif>
+</div>
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+<iscomment> here I used jQuery because the character '$' it was in conflict with another file </iscomment>
+<script>
+    jQuery.noConflict();
+jQuery(document).ready(function($){
+    $('.product-list').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: true,
+                    dots: true
+                }
+            }
+        ]
+    });
+});
+</script>

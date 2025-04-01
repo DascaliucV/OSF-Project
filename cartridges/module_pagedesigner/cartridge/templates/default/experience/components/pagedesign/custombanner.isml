@@ -1,0 +1,13 @@
+<isscript>
+    var assets = require('*/cartridge/scripts/assets.js');
+    assets.addCss('/css/custombanner.css');
+</isscript>
+
+<figure class="custom-banner-figure">
+    <a href="${pdict.categoryUrl}" class="custom-banner-link">
+        <picture>
+            <source srcset="${pdict.image.src.desktop}" media="(min-width: 768px)"/>
+            <img class="custom-banner-image" src="${pdict.image.src.mobile}" alt="${pdict.image.alt}" />
+        </picture>
+    </a>
+</figure>

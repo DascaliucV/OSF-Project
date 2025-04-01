@@ -1,0 +1,115 @@
+<footer id="footercontent">
+    <div class="container">
+    <div class="home-email-signup">
+        <div class="container">
+            <form role="form">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="hpEmailSignUp" placeholder="${Resource.msg('placeholdertext.form.emailsignup', 'homePage', null)}" aria-label="${Resource.msg('placeholdertext.form.emailsignup', 'homePage', null)}">
+                            <span class="input-group-append">
+                                <button type="submit" class="btn btn-primary subscribe-email" data-href="${URLUtils.url('EmailSubscribe-Subscribe')}">${Resource.msg('button.form.emailsignup', 'homePage', null)} </button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-sm-7 email-description">${Resource.msg('description.form.emailsignup', 'homePage', null)}</div>
+                </div>
+            </form>
+        </div>
+    </div>
+        <div class="footer-title"style="background-color:rgb(40, 158, 227);">
+            <iscontentasset aid="footer-title" />
+        </div>
+        <div class="footer-container row"style="background-color:rgb(40, 158, 227);">
+            <div class="footer-benefits col-sm-3 store">
+                <iscontentasset aid="footer_benefits" />
+            </div>
+            <div class="footer-item col-sm-3 collapsible-xs">
+                <iscontentasset aid="footer_benefits" />
+            </div>
+            <div class="footer-item col-sm-3 collapsible-xs">
+                <iscontentasset aid="footer_benefits" />
+            </div>
+            <div class="footer-item col-sm-3 collapsible-xs">
+                <iscontentasset aid="footer_benefits" />
+            </div>
+        </div>
+        <hr class="hidden-xs-down" />
+        <div class="row">
+            <div class="images">
+                <iscontentasset aid="images1-footer" />
+                <iscontentasset aid="images2-footer" />
+                <iscontentasset aid="images3-footer" />
+            </div>
+
+            <div style="background-color: rgb(40, 158, 227); width: 100%; padding: 20px; box-sizing: border-box;">
+    <div class="footer-container row" style="display: flex; flex-wrap: wrap; max-width: 1200px; margin: 0 auto;">
+        <div class="footer-item" style="flex: 1; min-width: 200px; padding: 0 15px;">
+            <iscontentasset aid="footer-support" />
+        </div>
+        <div class="footer-item" style="flex: 1; min-width: 200px; padding: 0 15px;">
+            <iscontentasset aid="footer-about" />
+        </div>
+        <div class="footer-item" style="flex: 1; min-width: 200px; padding: 0 15px;">
+            <iscontentasset aid="footer-account" />
+        </div>
+        <div class="footer-item" style="flex: 1; min-width: 200px; padding: 0 15px;">
+            <iscontentasset aid="footer-hotline" />
+        </div>
+        <div class="footer-item" style="flex: 1; min-width: 200px; padding: 0 15px;">
+            <iscontentasset aid="service-help-footer" />
+        </div>
+    </div>
+
+
+            </div>
+            <iscontentasset aid="footer-text" />
+
+        </div>
+      <div class="col-lg-8 col-sm-7 pull-sm-5 pull-lg-4 copyright-notice" 
+     style="background-color: rgb(40, 158, 227); 
+            margin: 0 auto; 
+            float: none; 
+            text-align: center; 
+            padding: 15px;">
+    <iscontentasset aid="footer-copy" />
+</div>
+
+
+    </div>
+</footer>
+<style>
+    .footer-title {
+        text-align: center;
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    /* Opțional - pentru a asigura vizibilitate */
+    .footer-title iscontentasset {
+        display: inline-block;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #333;
+        /* sau orice culoare dorită */
+    }
+
+
+    /* Stilizare pentru containerul cu imagini */
+    .images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        /* Spațiu între imagini */
+        flex-wrap: wrap;
+        /* Dacă imaginile nu încap, trec pe rândul următor */
+        margin-bottom: 20px;
+    }
+
+    /* Stilizare pentru imaginile din container */
+    .images iscontentasset {
+        display: inline-block;
+        vertical-align: middle;
+    }
+</style>
