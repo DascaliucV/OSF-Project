@@ -9,7 +9,9 @@ var server = require('server');
 var cache = require('*/cartridge/scripts/middleware/cache');
 var consentTracking = require('*/cartridge/scripts/middleware/consentTracking');
 var pageMetaData = require('*/cartridge/scripts/middleware/pageMetaData');
-
+var PageMgr = require('dw/experience/PageMgr');
+var searchHelper = require('*/cartridge/scripts/helpers/searchHelpers');
+var pageDesignerID = 'wayfinder-page'; // Primary page to check
 /**
  * Search-UpdateGrid : This endpoint is called when the shopper changes the "Sort Order" or clicks "More Results" on the Product List page
  * @name Base/Search-UpdateGrid
@@ -143,18 +145,67 @@ server.get('ShowAjax', cache.applyShortPromotionSensitiveCache, consentTracking.
  * @param {renders} - isml
  * @param {serverfunction} - get
  */
-server.get('Show', cache.applyShortPromotionSensitiveCache, consentTracking.consent, function (req, res, next) {
-    var PageMgr = require('dw/experience/PageMgr');
 
-     var pageDesignerID = 'my-page-designer-page';
-     var pageDesignerID = 'wayfinder-page';
-    var pageDesigner = PageMgr.getPage(pageDesignerID);
-    if (pageDesigner && pageDesigner.isVisible()) {
-        res.print(PageMgr.renderPage(pageDesigner.ID, ''));
-        return next();
+
+server.get('Show', cache.applyShortPromotionSensitiveCache, consentTracking.consent, function (req, res, next) {
+    var searchHelper = require('*/cartridge/scripts/helpers/searchHelpers');
+    var pageDesignerID = 'product-listing'; // Primary page to check
+
+    // Check primary page first
+    var currentPage = PageMgr.getPage(pageDesignerID);
+    
+
+    // Render the page if found and visible
+    if (currentPage && currentPage.isVisible()) {
+        res.print(PageMgr.renderPage(currentPage.ID, ''));
+        
+    }
+    if (req.querystring.cgid) {
+        var pageLookupResult = searchHelper.getPageDesignerCategoryPage(req.querystring.cgid);
+
+        if ((pageLookupResult.page && pageLookupResult.page.hasVisibilityRules()) || pageLookupResult.invisiblePage) {
+            // the result may be different for another user, do not cache on this level
+            // the page itself is a remote include and can still be cached
+            res.cachePeriod = 0; // eslint-disable-line no-param-reassign
         }
 
-     next();
+        if (pageLookupResult.page) {
+            res.page(pageLookupResult.page.ID, {}, pageLookupResult.aspectAttributes);
+            return next();
+        }
+    }
+
+    var template = 'search/searchResults';
+
+    var result = searchHelper.search(req, res);
+
+    if (result.searchRedirect) {
+        res.redirect(result.searchRedirect);
+    }
+
+    if (result.category && result.categoryTemplate) {
+        template = result.categoryTemplate;
+    }
+
+    var redirectGridUrl = searchHelper.backButtonDetection(req.session.clickStream);
+    if (redirectGridUrl) {
+        res.redirect(redirectGridUrl);
+    }
+
+    res.render(template, {
+        productSearch: result.productSearch,
+        maxSlots: result.maxSlots,
+        reportingURLs: result.reportingURLs,
+        refineurl: result.refineurl,
+        category: result.category ? result.category : null,
+        canonicalUrl: result.canonicalUrl,
+        schemaData: result.schemaData,
+        apiProductSearch: result.apiProductSearch
+    });
+    
+
+    // Continue to next middleware if no page found
+    next();
 }, pageMetaData.computedPageMetaData);
 
 /**
